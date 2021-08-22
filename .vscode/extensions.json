@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "ms-ossdata.vscode-postgresql"
+        "ms-ossdata.vscode-postgresql",
+        "rubymaniac.vscode-paste-and-indent"
     ]
 }

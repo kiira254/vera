@@ -4,7 +4,7 @@
 
      <div class="row">
 		<div class="col-lg-6">
-			<div class="box-element" id="form-wrapper">
+			<div style="background-color: #fadadd" class="box-element" id="form-wrapper">
 				<form id="form">
 					<div id="user-info">
 						<div class="form-field">
@@ -42,7 +42,7 @@
 			</div>
 
 			<br>
-			<div class="box-element hidden" id="payment-info">
+			<div class="box-element hidden" style="background-color: #fadadd" id="payment-info">
 				<small>Paypal Options</small>
 				<!--<button id="make-payment">Make payment</button>-->
 				<div id="paypal-button-container"></div>
@@ -51,7 +51,7 @@
 		</div>
 
 		<div class="col-lg-6">
-			<div class="box-element">
+			<div class="box-element" style="background-color: #fadadd">
 				<a  class="btn btn-outline-dark" href="{% url 'cart' %}">&#x2190; Back to Cart</a>
 				<hr>
 				<h3>Order Summary</h3>
@@ -190,6 +190,26 @@
 				})
 	    }
 	</script>
-	<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPu5x7AuhN6lbaaK7W0TJhb9CFrTrT4JdU1g&usqp=CAU'width="1000px"
-  height="200px >
+	
+   <style>
+ body {
+  background-image: url('https://i.pinimg.com/736x/5e/b6/39/5eb63933798e4c94f85f2103c96c9001.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+} 
+.jumbotron{
+   background: none;
+   padding-top: 200px;
+    padding-right: 500px;
+     padding-left: 0.1px;
+   color: pink;
+   text-align: left;
+}
+h1{
+  text-align: center;
+  padding:50px;
+}
+</style>
 {% endblock content %}

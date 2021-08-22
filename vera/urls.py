@@ -5,7 +5,7 @@ from .views import SignUpView
 urlpatterns = [
     # Leave as empty string for base url
     
-    path('', views.store, name="store"),
+    path('store', views.store, name="store"),
     path('cart/', views.cart, name="cart"),
     path('checkout/', views.checkout, name="checkout"),
 
@@ -15,5 +15,5 @@ urlpatterns = [
   
      path('signup/', SignUpView.as_view(), name='signup'),
        path("contact", views.contact, name="contact"),
-path('about', views.about, name='about'),
+path('', views.about, name='about'),
 ]

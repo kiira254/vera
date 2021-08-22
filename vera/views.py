@@ -51,7 +51,6 @@ def logout_request(request):
     return redirect("store")
 
 
-@login_required
 def store(request):
     data = cartData(request)
 
@@ -64,7 +63,6 @@ def store(request):
     return render(request, 'store/store.html', context)
 
 
-@login_required
 def cart(request):
     data = cartData(request)
 
@@ -76,7 +74,6 @@ def cart(request):
     return render(request, 'store/cart.html', context)
 
 
-@login_required
 def checkout(request):
     data = cartData(request)
 
@@ -88,7 +85,6 @@ def checkout(request):
     return render(request, 'store/checkout.html', context)
 
 
-@login_required
 def updateItem(request):
     data = json.loads(request.body)
     productId = data['productId']
@@ -117,7 +113,6 @@ def updateItem(request):
     return JsonResponse('Item was added', safe=False)
 
 
-@login_required
 def processOrder(request):
     transaction_id = datetime.datetime.now().timestamp()
     data = json.loads(request.body)
@@ -149,7 +144,6 @@ def processOrder(request):
     return JsonResponse('Payment submitted..', safe=False)
 
 
-@login_required
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -164,8 +158,8 @@ def contact(request):
             message = "\n".join(body.values())
 
             try:
-                send_mail(subject, message, 'admin@example.com',
-                          ['admin@example.com'])
+                send_mail(subject, message, 'nkamotho57@gmail.com',
+                          ['nkamotho69.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect("store")

@@ -1,20 +1,39 @@
 {% extends "store/base.html" %}
-
+{% load static %}
 {% block content %}      
 
 {% load crispy_forms_tags %}
 
 <!--Login--> 
 <div class="container py-5" bgcolor='pink'>
-  <h1>Login</h1>
+<div class='jumbotron'>
+ <h1>Login</h1>
   <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
-    <button class="btn btn-primary" type="submit">Login</button>
+    <button class="btn btn-danger" type="submit">Login</button>
   </form>
   <p class="text-center">Forgot password<a href="{% url 'password_reset' %}">Reset Password</a></p>
   <p class="text-center">Don't have an account? <a href="/signup">Create an account</a>.</p>
 </div>
-
-
+</div>
+<style>
+ body {
+  background-image: url('https://s2.best-wallpaper.net/wallpaper/2560x1440/1908/Fashion-girl-makeup-black-background_2560x1440.jpg');
+ 
+} 
+.jumbotron{
+   background: none;
+   padding-top: 200px;
+    padding-right: 500px;
+     padding-left: 0.1px;
+   color: pink;
+   text-align: left;
+}
+h1{
+  text-align: center;
+  padding:50px;
+}
+img{}
+</style>
 {% endblock %}

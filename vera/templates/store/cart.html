@@ -7,14 +7,14 @@
 >
   <div class="row">
     <div class="col-lg-12">
-      <div class="box-element">
-        <a class="btn btn-outline-dark" href="{% url 'store' %}"
+      <div class="box-element" style="background-color: #fadadd">
+        <a class="btn btn-outline-danger" href="{% url 'store' %}"
           >&#x2190; Continue Shopping</a
         >
 
         <br />
         <br />
-        <table class="table">
+        <table class="table" >
           <tr>
             <th>
               <h5>Items: <strong>{{order.get_cart_items}}</strong></h5>
@@ -37,7 +37,7 @@
       </div>
 
       <br />
-      <div class="box-element">
+      <div class="box-element" style="background-color: #fadadd">
         <div class="cart-row">
           <div style="flex: 2"></div>
           <div style="flex: 2"><strong>Item</strong></div>
@@ -79,5 +79,26 @@
     </div>
   </div>
   </div>
+   <style>
+ body {
+  background-image: url('https://i.pinimg.com/736x/5e/b6/39/5eb63933798e4c94f85f2103c96c9001.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+} 
+.jumbotron{
+   background: none;
+   padding-top: 200px;
+    padding-right: 500px;
+     padding-left: 0.1px;
+   color: pink;
+   text-align: left;
+}
+h1{
+  text-align: center;
+  padding:50px;
+}
+</style>
   {% endblock content %}
 </div>

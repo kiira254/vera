@@ -40,11 +40,11 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
 <!--Contact form-->
-<div style="margin:80px" class='jumbotron' background-color='pink'>
-		<h1 class="text-center">Contact</h1>
+<div style="margin:80px" class='jumbotron'>
+		<h1 >Contact</h1>
 		<h4>Contact us directly if you have any questions</h4>
 		<p>
-			Please write your name, email address and a message below if you have any questions.
+			Please write your name, email address and a message below if you have any questions.</br>
 			One of our staff members will be happy to contact you directly and answer your questions as soon as possible. 
 		</p>
 		<form method="post">
@@ -77,6 +77,25 @@
     ></script>
 
     <script type="text/javascript" src="{% static 'js/cart.js' %}"></script>
-    
+    <style>
+     body {
+  background-image: url('{% static 'images\welcome.jpg' %}');
+  background-repeat: no-repeat;
+  
+
+} 
+.jumbotron{
+   background: none;
+   padding-top: 100px;
+    padding-right: 00px;
+     padding-left: 600px;
+   color: maroon;
+  
+}
+h1{
+  
+  padding:30px;
+}
+</style>
   </body>
 </html>

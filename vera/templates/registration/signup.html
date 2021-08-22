@@ -3,10 +3,33 @@
 {% block title %}Sign Up{% endblock %}
 
 {% block content %}
-  <h2>Sign up</h2>
+<div class='jumbotron'>
+  <h1>Sign up</h1>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Sign Up</button>
+    <button type="submit"  class="btn btn-danger" >Sign Up</button>
   </form>
+  </div>
+  <style>
+ body {
+  background-image: url('https://zuryebeauty.com/wp-content/uploads/2021/02/6ed6f98d129906dcf03e7ec031fd2963.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+} 
+.jumbotron{
+   background: none;
+   padding-top: 100px;
+     padding-left: 300px;
+   color: maroon;
+   
+}
+h1{
+  text-align: center;
+  padding:50px;
+}
+
+</style>
 {% endblock %}
