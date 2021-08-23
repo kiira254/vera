@@ -43,8 +43,9 @@
 
 			<br>
 			<div class="box-element hidden" style="background-color: #fadadd" id="payment-info">
-				<small>Paypal Options</small>
-				<!--<button id="make-payment">Make payment</button>-->
+				<small>Paypal </small>
+				
+				<button class="btn btn-danger btn-block" id="make-payment">Make payment</button>
 				<div id="paypal-button-container"></div>
 			</div>
 			
@@ -65,7 +66,7 @@
 				</div>
 				{% endfor %}
 				<h5>Items:   {{order.get_cart_items}}</h5>
-				<h5>Total:   ${{order.get_cart_total|floatformat:2}}</h5>
+				<h5>Total:  Ksh{{order.get_cart_total|floatformat:2}}</h5>
 			</div>
 		</div>
 	</div>
@@ -130,11 +131,11 @@
 	    	document.getElementById('payment-info').classList.remove("hidden");
 	    })
 
-		/*
+		
 	    document.getElementById('make-payment').addEventListener('click', function(e){
 	    	submitFormData()
 	    })
-	    */
+	
 
 	    function submitFormData(){
 	    	console.log('Payment button clicked')

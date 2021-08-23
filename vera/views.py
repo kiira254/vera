@@ -41,8 +41,8 @@ def login_request(request):
     return render(request=request, template_name="store/login.html", context={"login_form": form})
 
 
-def about(request):
-    return render(request, 'store/about.html')
+def home(request):
+    return render(request, 'store/home.html')
 
 
 def logout_request(request):

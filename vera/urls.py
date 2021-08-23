@@ -15,5 +15,5 @@ urlpatterns = [
   
      path('signup/', SignUpView.as_view(), name='signup'),
        path("contact", views.contact, name="contact"),
-path('', views.about, name='about'),
+path('', views.home, name='home'),
 ]
